@@ -1,0 +1,293 @@
+---
+title: 'SMS Marketing: The Underrated Channel Entrepreneurs Ignore'
+description: 'How to use SMS marketing for customer engagement, sales, and retention. Covers compliance (TCPA, opt-in requirements), tools like Twilio, Attentive, and Postscript, campaign types, and automation workflows.'
+primaryKeyword: 'sms marketing'
+secondaryKeywords:
+  - 'sms marketing strategy'
+  - 'text message marketing'
+  - 'sms marketing tools'
+  - 'sms marketing compliance'
+  - 'sms marketing automation'
+cluster: 'AI Strategy'
+clusterSlug: 'ai-strategy'
+intent: 'how-to'
+lastUpdated: '2026-04-13'
+priority: 2
+relatedSlugs:
+  - 'ai-email-marketing'
+  - 'marketing-automation'
+  - 'personalized-marketing'
+faq:
+  - question: 'What are SMS marketing open rates compared to email?'
+    answer: 'SMS messages have a 98 percent open rate compared to email open rates of 20 to 25 percent. More importantly, 90 percent of text messages are read within 3 minutes of delivery, while the average email sits unread for 6 hours. Click-through rates tell a similar story: SMS click-through rates average 19 to 36 percent versus 2 to 5 percent for email. Response rates are even more dramatic -- SMS has a 45 percent response rate compared to 6 percent for email. These numbers hold across industries and company sizes. The reason is straightforward: people treat their text message inbox with more attention than their email inbox. There is less competition for attention in the SMS channel because fewer businesses use it. That advantage will erode as more businesses adopt SMS marketing, which is why the time to start is now.'
+  - question: 'Is SMS marketing legal and what are the compliance requirements?'
+    answer: 'SMS marketing is legal in the United States under the TCPA (Telephone Consumer Protection Act) and state regulations, provided you follow specific rules. The non-negotiable requirements are: you must obtain prior express written consent before sending marketing texts (a checked checkbox does not count -- the consumer must actively opt in), every message must include opt-out instructions (typically "Reply STOP to unsubscribe"), you must honor opt-out requests immediately, you cannot send messages before 8 AM or after 9 PM in the recipient timezone, and you must clearly identify your business in each message. Penalties for violations are severe -- 500 to 1,500 dollars per unsolicited message. The FCC and state attorneys general actively enforce these rules. Use a compliant SMS marketing platform like Attentive, Postscript, or Klaviyo that builds compliance features into the sending process so you do not accidentally violate regulations.'
+  - question: 'How much does SMS marketing cost?'
+    answer: 'SMS marketing costs include a platform fee plus per-message costs. Platform fees range from free (Twilio pay-as-you-go) to 300 dollars or more per month for enterprise platforms like Attentive. Per-message costs are typically 0.01 to 0.05 dollars per SMS segment in the US, with MMS messages (which include images) costing 0.02 to 0.10 dollars each. A small business sending 5,000 messages per month to a list of 1,000 subscribers would spend roughly 50 to 100 dollars per month on a platform like SimpleTexting or Postscript, plus per-message fees. The ROI typically justifies the cost: SMS marketing generates an average of 8.11 dollars per message sent for e-commerce businesses according to Attentive data. Even at 0.03 dollars per message, that is a 270x return. Start with a small list and validate the ROI for your specific business before scaling spend.'
+  - question: 'How often should you text your SMS marketing list?'
+    answer: 'Two to four messages per month is the sweet spot for most businesses. One message per week is the upper limit before opt-out rates start climbing. Below two messages per month, subscribers forget they signed up and are more likely to mark your messages as spam. The exception is transactional and triggered messages -- order confirmations, shipping updates, appointment reminders -- which do not count toward this limit because subscribers expect them. The optimal frequency depends on your industry: e-commerce can text more often during promotions and product launches, while service businesses should stick to the lower end. Monitor your opt-out rate per campaign. If any single message generates more than 2 percent opt-outs, reduce frequency or improve message relevance. Your SMS list is a high-value asset -- protect it by respecting attention.'
+---
+
+Every entrepreneur checks their text messages. Every single one. You know this because you do it too. A text comes in, you read it within minutes. Not hours. Not "when I get around to it." Minutes.
+
+Now think about how you treat email. You skim subject lines. You archive without opening. You have 4,000 unread messages and you are not remotely bothered by it. This is the gap that makes SMS marketing absurdly effective and absurdly underused.
+
+Email marketing is not dead, but it is crowded. Your email competes with 100 other emails that arrived today. Your text message competes with maybe 10 texts, most of them from friends and family. The attention quality is completely different. And yet most businesses pour resources into email while ignoring SMS entirely, either because they do not know how to start or because they are afraid of regulatory complexity.
+
+This guide removes both obstacles. Here is how SMS marketing works, what it costs, how to stay legal, and the specific campaigns and automations that produce results.
+
+## Why SMS Marketing Works: The Numbers
+
+Before investing time in a channel, you need to know whether the economics work. Here are the numbers that matter.
+
+**Open rates:** 98 percent of text messages are opened. Compare that to the 20-25 percent average for email. This is not a marginal improvement. It is a fundamentally different level of attention.
+
+**Read speed:** 90 percent of texts are read within 3 minutes. The average email is opened 6 hours after delivery. If you have a time-sensitive message -- a flash sale, a booking reminder, a limited inventory alert -- SMS delivers it when it matters.
+
+**Click-through rates:** SMS CTR averages 19-36 percent. Email CTR averages 2-5 percent. When you include a link in a text message, people click it.
+
+**Response rates:** 45 percent of SMS recipients respond to messages. 6 percent of email recipients respond. This makes SMS the best channel for two-way conversations -- appointment confirmations, feedback requests, customer support.
+
+**Revenue per message:** E-commerce businesses generate an average of $8.11 in revenue per SMS message sent (Attentive data, 2025). At a cost of $0.01-0.05 per message, the unit economics are exceptional.
+
+### Why Most Businesses Do Not Use SMS
+
+**Fear of compliance.** The TCPA has real penalties -- $500-$1,500 per unauthorized message. This scares businesses away. But compliance is not complicated. It is a set of specific rules that SMS platforms enforce automatically.
+
+**Perceived intrusiveness.** "People don't want to get texts from businesses." Wrong. People do not want to get unsolicited or irrelevant texts. People who explicitly opted into your SMS list want to hear from you -- they gave you their phone number voluntarily.
+
+**Lack of awareness.** Most marketing content focuses on email, social media, and paid ads. SMS gets overlooked in strategy discussions because it is not new or glamorous.
+
+## Compliance: The Rules You Must Follow
+
+TCPA compliance is not optional. It is the foundation of every SMS marketing program. Get this wrong and you face class-action lawsuits and FCC enforcement actions. Get it right and it takes almost no ongoing effort.
+
+### The Non-Negotiable Rules
+
+**Rule 1: Prior express written consent.** You must get explicit, documented permission before sending any marketing text. This means a form, popup, or checkout flow where the customer actively opts in to SMS marketing. Pre-checked boxes do not count. Purchasing a phone number list and texting it is illegal.
+
+**Acceptable opt-in methods:**
+
+- Website popup: "Enter your phone number to get 15% off your first order + exclusive deals via text"
+- Checkout checkbox (unchecked by default): "I'd like to receive order updates and promotions via text"
+- Keyword opt-in: "Text JOIN to 55555 to subscribe to our deals"
+- Paper form (in-store): Signed consent form with clear SMS marketing language
+
+**Rule 2: Clear identification.** Every message must identify your business. Include your brand name in each text.
+
+**Rule 3: Opt-out instructions.** Include "Reply STOP to unsubscribe" in your messages. Process opt-outs immediately and automatically.
+
+**Rule 4: Time restrictions.** Do not send messages before 8 AM or after 9 PM in the recipient's local timezone. Most SMS platforms handle timezone detection automatically.
+
+**Rule 5: Message content.** Do not send deceptive messages, promote illegal products, or use SHAFT content (sex, hate, alcohol, firearms, tobacco) without age-gating compliance.
+
+### Record Keeping
+
+Keep records of every opt-in: when it happened, how it happened, and what the consumer was told. If someone files a complaint, you need proof of consent. Your SMS platform should log this automatically, but verify that it does.
+
+## SMS Marketing Tools: What to Use
+
+### Attentive ($300+/Month)
+
+The enterprise leader in SMS marketing for e-commerce. Attentive handles opt-in collection, segmentation, campaign sending, automation flows, and compliance -- all in one platform.
+
+**Best for:** E-commerce brands with 10,000+ subscribers who want a full-service SMS platform with advanced segmentation and AI-powered send time optimization.
+
+**Key features:** Two-tap mobile opt-in (reduces friction), conversational commerce (AI chatbot responses), advanced segmentation by behavior and purchase history, A/B testing.
+
+**Limitation:** Expensive. The minimum spend makes it impractical for businesses just starting with SMS.
+
+### Postscript ($25+/Month)
+
+Built specifically for Shopify stores. Postscript integrates deeply with Shopify for product recommendations, abandoned cart recovery, and order-based segmentation.
+
+**Best for:** Shopify store owners who want plug-and-play SMS marketing with strong automation and reasonable pricing.
+
+**Key features:** Shopify-native integration, automated flows (welcome, abandoned cart, post-purchase), keyword campaigns, subscriber growth tools, revenue attribution.
+
+**Limitation:** Only works with Shopify. If you are on WooCommerce, BigCommerce, or another platform, look elsewhere.
+
+### SimpleTexting ($29+/Month)
+
+The general-purpose SMS marketing tool. Works for any business type -- e-commerce, service businesses, restaurants, real estate, healthcare.
+
+**Best for:** Non-e-commerce businesses or businesses on any platform who want straightforward SMS marketing without complex setup.
+
+**Key features:** Keyword campaigns, drip campaigns, contact management, two-way messaging, Zapier integrations, MMS support.
+
+**Limitation:** Less sophisticated segmentation and automation compared to Attentive or Postscript.
+
+### Klaviyo ($0-$60+/Month for SMS)
+
+Klaviyo combines email and SMS marketing in one platform. If you already use Klaviyo for email, adding SMS is seamless.
+
+**Best for:** Businesses already using Klaviyo for email who want unified email + SMS automation without managing two platforms.
+
+**Key features:** Unified customer profiles across email and SMS, cross-channel automation (send email, wait, send SMS), predictive analytics, deep e-commerce integrations.
+
+**Limitation:** SMS is an add-on to Klaviyo's email plans. If you do not need email, it is overbuilt.
+
+### Twilio ($0 Platform + Pay Per Message)
+
+Twilio is the developer platform that powers most of the tools above. It is not a marketing tool -- it is infrastructure. You build your own SMS system on top of it.
+
+**Best for:** Developers and technical teams who want complete control over SMS functionality and integration with custom systems.
+
+**Key features:** API-first design, global reach, programmable messaging, complete customization.
+
+**Limitation:** Requires development work. No built-in marketing features. Not suitable for non-technical users.
+
+## Campaign Types That Generate Revenue
+
+### 1. Welcome Series
+
+**Trigger:** New subscriber opts in.
+
+**Message 1 (Immediately):** "Hey [Name]! Welcome to [Brand]. Here's your 15% off code: WELCOME15. Shop now: [link]. Reply STOP to opt out."
+
+**Message 2 (Day 2):** "Quick question -- what are you most interested in? Reply A for [category], B for [category], or C for [category]." Use the response to segment them for future campaigns.
+
+**Message 3 (Day 5):** "Our customers' favorite: [product name]. 4.8 stars from 2,000 reviews. Check it out: [link]"
+
+**Why it works:** The welcome discount drives immediate revenue. The segmentation question improves future message relevance. The product recommendation converts browsers into buyers.
+
+### 2. Abandoned Cart Recovery
+
+**Trigger:** Customer adds items to cart and leaves without purchasing.
+
+**Message 1 (1 hour after abandonment):** "Hey [Name], you left something in your cart at [Brand]. Finish your order before it sells out: [cart link]"
+
+**Message 2 (24 hours):** "Still thinking about it? Your cart is waiting. Here's 10% off to help you decide: [code]. Shop now: [link]"
+
+**Why it works:** SMS abandoned cart messages recover 3-5x more carts than email alone because of the immediacy. The one-hour window catches the customer while they still have purchase intent.
+
+### 3. Flash Sale / Limited Offer
+
+**Message:** "[Brand] FLASH SALE: 30% off everything for the next 4 hours. Use code FLASH30. Shop now: [link]"
+
+**Why it works:** SMS is the ideal channel for time-sensitive offers because of the immediate open rate. A flash sale announced by email might not be seen until after it ends. By text, your entire list sees it within minutes.
+
+**Best practices:** Limit flash sale texts to once or twice per month. Overusing them trains your audience to wait for discounts.
+
+### 4. Back-in-Stock Notifications
+
+**Trigger:** Product the customer viewed or wishlisted is back in stock.
+
+**Message:** "Good news, [Name]! [Product name] is back in stock -- but won't last long. Grab yours: [link]"
+
+**Why it works:** The customer already demonstrated interest. The urgency is genuine (popular products do sell out again). This is a high-conversion, low-annoyance message.
+
+### 5. Post-Purchase Follow-Up
+
+**Trigger:** Customer receives their order (based on delivery confirmation).
+
+**Message (2 days after delivery):** "Hey [Name]! How are you liking your [product]? We'd love to hear your thoughts. Leave a review: [link]"
+
+**Why it works:** Review requests via SMS get significantly higher response rates than email. Timing the request 2 days after delivery ensures they have had time to use the product.
+
+### 6. VIP / Loyalty Messages
+
+**Audience:** Top 20 percent of customers by purchase frequency or lifetime value.
+
+**Message:** "Hey [Name], you're one of our top customers so you get first access. Our new [product] launches tomorrow -- shop it now before everyone else: [link]"
+
+**Why it works:** Exclusivity drives engagement and loyalty. VIP early access creates a flywheel where your best customers buy first, leave reviews, and generate social proof before the public launch.
+
+## Automation Workflows
+
+### The Three Automations Every Business Should Run
+
+**Automation 1: Welcome + Segment**
+
+Trigger: Opt-in → Send welcome discount → Wait 48 hours → Send segmentation question → Tag based on response → Enter segment-specific flow
+
+**Automation 2: Abandoned Cart**
+
+Trigger: Cart abandoned → Wait 1 hour → Send reminder → Wait 23 hours → Send discount offer → Wait 48 hours → Send final reminder (if cart still has items)
+
+**Automation 3: Win-Back**
+
+Trigger: No purchase in 60 days → Send "We miss you" message with offer → Wait 7 days → If no purchase, send product recommendation based on past purchases → Wait 7 days → If no purchase, send final offer with increased discount or free shipping
+
+### Cross-Channel Integration: SMS + Email
+
+The most effective marketing automations use both SMS and email, not one or the other. Use email for longer content (product education, newsletters, detailed announcements) and SMS for urgent, action-oriented messages (flash sales, cart recovery, delivery updates).
+
+**Example cross-channel flow for a product launch:**
+
+1. Email (Day -7): Detailed product announcement with full story and images
+2. SMS (Day -1): "Tomorrow: [Product] launches. You'll get first access at 9 AM"
+3. SMS (Day 0, 9 AM): "It's live! [Product] is now available. Shop now: [link]"
+4. Email (Day 0, 12 PM): Launch email with full product details and customer reviews
+5. SMS (Day 2): "Only 50 left in stock. [Product]: [link]"
+
+## Growing Your SMS List
+
+### Opt-In Strategies That Work
+
+**Website popup with incentive.** "Get 15% off + exclusive text-only deals. Enter your phone number." This is the highest-volume opt-in source for most e-commerce businesses. Use a popup tool like Justuno, Privy, or Attentive's built-in opt-in forms.
+
+**Checkout opt-in.** Add an unchecked checkbox during checkout: "Send me order updates and exclusive deals via text." Conversion rate: 10-20 percent of customers opt in.
+
+**Keyword campaign.** "Text PIZZA to 55555 for weekly deals." Works well for retail and restaurant businesses with physical locations where you can display the keyword.
+
+**Social media promotion.** "Want deals before anyone else? Join our text list: [link to opt-in page]." One post per month is sufficient.
+
+**Email list conversion.** Send your email list an offer to join your SMS list. "We're launching text-only deals. Get 20% off when you join our text list: [link]." Expect 5-10 percent of your email list to convert to SMS subscribers.
+
+### List Growth Benchmarks
+
+| Business Type | Monthly Subscriber Growth | Time to 1,000 Subscribers |
+|--------------|--------------------------|--------------------------|
+| E-commerce (mid-traffic) | 200-500 | 2-5 months |
+| Local service business | 50-150 | 6-12 months |
+| Restaurant | 100-300 | 3-6 months |
+| SaaS / B2B | 30-100 | 10-18 months |
+
+## Measuring SMS Marketing Performance
+
+### Metrics That Matter
+
+**Revenue per message (RPM):** Total SMS-attributed revenue divided by messages sent. Benchmark: $0.50-$2.00 for general campaigns, $5.00+ for targeted campaigns.
+
+**Click-through rate (CTR):** Percentage of recipients who clicked a link. Benchmark: 15-30 percent.
+
+**Conversion rate:** Percentage of clickers who completed a purchase or desired action. Benchmark: 5-15 percent.
+
+**Opt-out rate per campaign:** Percentage of recipients who unsubscribe after a specific message. Benchmark: under 2 percent. Above 3 percent, reassess your message frequency or relevance.
+
+**List growth rate:** Net new subscribers per month (new opt-ins minus opt-outs). A healthy list grows by 5-10 percent monthly.
+
+### Attribution
+
+SMS attribution is cleaner than most marketing channels because the path from message to purchase is direct: they receive the text, click the link, and buy. Most SMS platforms provide built-in revenue attribution. Cross-reference with your e-commerce platform to verify accuracy.
+
+For businesses using both email and SMS, set up proper attribution windows. A common model: attribute a purchase to the last channel that received engagement within 24 hours (SMS) or 5 days (email).
+
+## FAQ
+
+### What are SMS marketing open rates compared to email?
+
+SMS messages have a 98 percent open rate compared to email open rates of 20 to 25 percent. More importantly, 90 percent of text messages are read within 3 minutes of delivery, while the average email sits unread for 6 hours. Click-through rates tell a similar story: SMS click-through rates average 19 to 36 percent versus 2 to 5 percent for email. Response rates are even more dramatic -- SMS has a 45 percent response rate compared to 6 percent for email. These numbers hold across industries and company sizes. The reason is straightforward: people treat their text message inbox with more attention than their email inbox. There is less competition for attention in the SMS channel because fewer businesses use it. That advantage will erode as more businesses adopt SMS marketing, which is why the time to start is now.
+
+### Is SMS marketing legal and what are the compliance requirements?
+
+SMS marketing is legal in the United States under the TCPA (Telephone Consumer Protection Act) and state regulations, provided you follow specific rules. The non-negotiable requirements are: you must obtain prior express written consent before sending marketing texts (a checked checkbox does not count -- the consumer must actively opt in), every message must include opt-out instructions (typically "Reply STOP to unsubscribe"), you must honor opt-out requests immediately, you cannot send messages before 8 AM or after 9 PM in the recipient timezone, and you must clearly identify your business in each message. Penalties for violations are severe -- 500 to 1,500 dollars per unsolicited message. The FCC and state attorneys general actively enforce these rules. Use a compliant SMS marketing platform like Attentive, Postscript, or Klaviyo that builds compliance features into the sending process so you do not accidentally violate regulations.
+
+### How much does SMS marketing cost?
+
+SMS marketing costs include a platform fee plus per-message costs. Platform fees range from free (Twilio pay-as-you-go) to 300 dollars or more per month for enterprise platforms like Attentive. Per-message costs are typically 0.01 to 0.05 dollars per SMS segment in the US, with MMS messages (which include images) costing 0.02 to 0.10 dollars each. A small business sending 5,000 messages per month to a list of 1,000 subscribers would spend roughly 50 to 100 dollars per month on a platform like SimpleTexting or Postscript, plus per-message fees. The ROI typically justifies the cost: SMS marketing generates an average of 8.11 dollars per message sent for e-commerce businesses according to Attentive data. Even at 0.03 dollars per message, that is a 270x return. Start with a small list and validate the ROI for your specific business before scaling spend.
+
+### How often should you text your SMS marketing list?
+
+Two to four messages per month is the sweet spot for most businesses. One message per week is the upper limit before opt-out rates start climbing. Below two messages per month, subscribers forget they signed up and are more likely to mark your messages as spam. The exception is transactional and triggered messages -- order confirmations, shipping updates, appointment reminders -- which do not count toward this limit because subscribers expect them. The optimal frequency depends on your industry: e-commerce can text more often during promotions and product launches, while service businesses should stick to the lower end. Monitor your opt-out rate per campaign. If any single message generates more than 2 percent opt-outs, reduce frequency or improve message relevance. Your SMS list is a high-value asset -- protect it by respecting attention.
+
+## Conclusion
+
+SMS marketing is the highest-attention channel available to businesses right now. The open rates, click rates, and response rates are not in the same league as email -- they are in a different sport entirely. And yet most businesses do not use it because they are either unaware of its effectiveness or intimidated by compliance requirements.
+
+The compliance rules are specific and manageable. Get explicit opt-in consent, identify your business, include opt-out instructions, respect time restrictions, and keep records. Any reputable SMS platform handles most of this automatically.
+
+Start with three things: a welcome series with a discount, an abandoned cart recovery flow, and one campaign per week (flash sale, new product, or VIP offer). Use Postscript if you are on Shopify, Klaviyo if you already use it for email, or SimpleTexting for everything else.
+
+The window of extraordinary SMS marketing performance is open now because the channel is still underused. As more businesses adopt it, the inbox will get more competitive, just as email did. The businesses that build their SMS lists and systems now will have the advantage when that happens. Start this week.
